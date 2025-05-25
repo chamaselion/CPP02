@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:28 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/25 14:17:35 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/25 14:19:37 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main( void ) {
 	std::cout << Fixed::max( a, b ) << std::endl;
 	
 	Fixed c(10);
-	Fixed d(3.5);
+	Fixed d(3.5f);
 	Fixed e(-2);
 	Fixed f(d);
 	Fixed g;
