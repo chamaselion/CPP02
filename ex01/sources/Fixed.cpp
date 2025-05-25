@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:32 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/21 14:15:06 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/25 15:17:18 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,6 @@ std::ostream& operator<<(std::ostream& o, const Fixed& fixed)
 
 float	Fixed::toFloat( void ) const {return static_cast<float>(this->number) / (1 << bit_number);}
 
-int		Fixed::toInt( void ) const {return this->number >> bit_number;}
+// int		Fixed::toInt( void ) const {return this->number / (1 << bit_number);}
+ int		Fixed::toInt( void ) const {return this->number >> bit_number;}
 
