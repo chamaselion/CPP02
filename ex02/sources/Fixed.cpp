@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:32 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/10 11:35:01 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/25 14:13:12 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,24 +93,24 @@ int		Fixed::toInt( void ) const {return this->number >> bit_number;}
 
 	Fixed& Fixed::operator++()
 	{
-		this->number += 1;
+		this->number += (1 << bit_number);
 		return *this;
 	}
 	Fixed Fixed::operator++(int)
 	{
 		Fixed temp = *this;
-		this->number += 1;
+		this->number += (1 << bit_number);
 		return temp;
 	}
 	Fixed& Fixed::operator--()
 	{
-		this->number -= 1;
+		this->number -= (1 << bit_number);
 		return *this;
 	}
 	Fixed Fixed::operator--(int)
 	{
 		Fixed temp = *this;
-		this->number -= 1;
+		this->number -= (1 << bit_number);
 		return temp;
 	}
 
