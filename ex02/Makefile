@@ -1,6 +1,6 @@
 NAME		=	fixed
 CC			=	c++
-CFLAGS		=	-Wall -Wextra -Werror -std=c++98
+CFLAGS		=	-Wall -Wextra -Werror -std=c++98 
 INCL_DIR	=	includes
 SRC_DIR		=	sources
 OBJ_DIR		=	objects

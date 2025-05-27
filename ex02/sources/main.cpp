@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:28 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/27 13:19:38 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/27 13:39:42 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main( void ) {
 	std::cout << a++ << std::endl;
 	std::cout << a << std::endl;
 	std::cout << b << std::endl;
-	std::cout << Fixed::max( a, b ) << std::endl;
+	std::cout << Fixed::max( a, b ) << std::endl << std::endl << std::endl;
 	
 	Fixed c(10);
 	Fixed d(3.5f);
@@ -35,7 +35,7 @@ int main( void ) {
 	std::cout << "d: " << f << "\n";
 	std::cout << "e: " << g << "\n";
 
-	std::cout << "a > b: " << (c > d) << "\n";
+	std::cout << std::endl << "a > b: " << (c > d) << "\n";
 	std::cout << "a < b: " << (c < d) << "\n";
 	std::cout << "a >= b: " << (c >= d) << "\n";
 	std::cout << "a <= b: " << (c <= d) << "\n";
