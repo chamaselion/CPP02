@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
+/*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:28 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/25 15:16:01 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/27 13:19:00 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <Fixed.hpp>
 #include "Fixed.hpp"
-#include <iostream>
 
 // static int tests_failed = 0;
 
