@@ -6,13 +6,14 @@
 /*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:28 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/27 13:39:42 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/06/11 16:46:38 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Fixed.hpp>
 
-int main( void ) {
+int main( void )
+{
 	Fixed a;
 	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 	std::cout << a << std::endl;

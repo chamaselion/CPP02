@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 13:07:32 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/27 13:34:10 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/06/11 16:48:32 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,26 @@
 const int Fixed::bit_number = 8;
 
 Fixed::Fixed() : number(0) {
-	//std::cout << "Default constructor called\n";
+	std::cout << "Default constructor called\n";
 }
 Fixed::Fixed(const Fixed& other)
 {
 	this->number = other.number;
-	//std::cout << "Copy constructor called\n";
+	std::cout << "Copy constructor called\n";
 }
 Fixed& Fixed::operator=(const Fixed& other) {
 	if (this != &other)
         this->number = other.number;
-	//return (std::cout << "Copy assignment operator called\n", *this);
+	return (std::cout << "Copy assignment operator called\n", *this);
 	return (*this);
 }
 Fixed::~Fixed() {
-	//std::cout << "Destructor called\n";
+	std::cout << "Destructor called\n";
 }
 
 int		Fixed::getRawBits( void ) const
 {
-	//std::cout << "getRawBits member function called\n";
+	std::cout << "getRawBits member function called\n";
 	return this->number;
 }
 
@@ -44,13 +44,13 @@ void	Fixed::setRawBits( int const raw ) {this->number = raw;}
 Fixed::Fixed(const int toconvert)
 {
     this->number = toconvert << bit_number;
-    //std::cout << "Int constructor called\n";
+    std::cout << "Int constructor called\n";
 }
 
 Fixed::Fixed(const float toconvert)
 {
     this->number = static_cast<int>(roundf(toconvert * (1 << bit_number)));
-   //std::cout << "Float constructor called\n";
+   std::cout << "Float constructor called\n";
 }
 
 std::ostream& operator<<(std::ostream& o, const Fixed& fixed)
@@ -111,14 +111,14 @@ int		Fixed::toInt( void ) const {return this->number >> bit_number;}
 	}
 	Fixed& Fixed::operator--()
 	{
-		//this->number -= (1 << bit_number);
+		// this->number -= (1 << bit_number);
 		this->number -= 1;
 		return *this;
 	}
 	Fixed Fixed::operator--(int)
 	{
 		Fixed temp = *this;
-		//this->number -= (1 << bit_number);
+		// this->number -= (1 << bit_number);
 		this->number -= 1;
 		return temp;
 	}
